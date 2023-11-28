@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Composición de Componentes</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+</body>
+</html>
+
+<body>
+    <div class="container">
+      <my-container>
+        <my-header slot="header">
+          <header class="text-center">
+            <h1 class="mt-5">¡Hola Bienvenido!</h1>
+          </header>
+        </my-header>
+        <my-list slot="list">
+          <section>
+            <ul class="list-group">
+              <li class="list-group-item">Elemento 1</li>
+              <li class="list-group-item">Elemento 2</li>
+              <li class="list-group-item">Elemento 3</li>
+            </ul>
+          </section>
+        </my-list>
+        <my-form slot="form">
+          <section class="text-center">
+            <form>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" class="form-control mb-2" required>
+              <label for="correo">Correo:</label>
+              <input type="email" id="correo" name="correo" class="form-control mb-2" required>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </section>
+        </my-form>
+      </my-container>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+  </html>
+  
